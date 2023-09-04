@@ -1,0 +1,20 @@
+{
+	"data": {
+		"id": 0,
+		"nama": "Gending",
+		"karakteristik": "lorem ipsum",
+		"sektor": "Pariwisata",
+		"usaha": [
+			{
+				"nama": "Bakso Malang (ADI)",
+				"sektor": "Manufacturing",
+				"subSektor": "Manufacturing of Food Prod."
+			},
+			{
+				"nama": "Tahu Sumedang (AGUNG)",
+				"sektor": "Manufacturing",
+				"subSektor": "Manufacturing of Food Prod."
+			}
+		]
+	}
+}

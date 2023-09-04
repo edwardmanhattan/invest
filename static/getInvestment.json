@@ -1,0 +1,60 @@
+{
+	"data": [
+		{
+			"id": 0,
+			"nama": "Example Investment",
+			"sektor": "Pariwisata",
+			"nilai": 250000000,
+			"lokasi": "Probolinggo"
+		},
+		{
+			"id": 1,
+			"nama": "Example Investment",
+			"sektor": "Pariwisata",
+			"nilai": 350000000,
+			"lokasi": "Probolinggo"
+		},
+		{
+			"id": 2,
+			"nama": "Example Investment",
+			"sektor": "Pariwisata",
+			"nilai": 450000000,
+			"lokasi": "Probolinggo"
+		},
+		{
+			"id": 3,
+			"nama": "Example Investment",
+			"sektor": "Industrial",
+			"nilai": 550000000,
+			"lokasi": "Kab. Probolinggo"
+		},
+		{
+			"id": 4,
+			"nama": "Example Investment",
+			"sektor": "Industrial",
+			"nilai": 650000000,
+			"lokasi": "Kab. Probolinggo"
+		},
+		{
+			"id": 5,
+			"nama": "Example Investment",
+			"sektor": "Industrial",
+			"nilai": 10000000000000,
+			"lokasi": "Kab. Probolinggo"
+		},
+		{
+			"id": 6,
+			"nama": "Example Investment",
+			"sektor": "Industrial",
+			"nilai": 950000000,
+			"lokasi": "Probolinggo"
+		},
+		{
+			"id": 7,
+			"nama": "Example Investment",
+			"sektor": "Industrial",
+			"nilai": 150000000,
+			"lokasi": "Kab. Probolinggo"
+		}
+	]
+}

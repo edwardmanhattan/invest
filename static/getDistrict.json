@@ -1,0 +1,44 @@
+{
+	"data": [
+		{
+			"id": 0,
+			"nama": "Bantaran",
+			"jumlahProjek": 2
+		},
+		{
+			"id": 1,
+			"nama": "Banyuanyar",
+			"jumlahProjek": 2
+		},
+		{
+			"id": 2,
+			"nama": "Gading",
+			"jumlahProjek": 2
+		},
+		{
+			"id": 3,
+			"nama": "Gending",
+			"jumlahProjek": 2
+		},
+		{
+			"id": 4,
+			"nama": "Kraksaan",
+			"jumlahProjek": 2
+		},
+		{
+			"id": 5,
+			"nama": "Krucil",
+			"jumlahProjek": 3
+		},
+		{
+			"id": 6,
+			"nama": "Maron",
+			"jumlahProjek": 5
+		},
+		{
+			"id": 7,
+			"nama": "Paiton",
+			"jumlahProjek": 10
+		}
+	]
+}

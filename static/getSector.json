@@ -1,0 +1,36 @@
+{
+	"data": [
+		{
+			"id": 0,
+			"nama": "Education"
+		},
+		{
+			"id": 1,
+			"nama": "Construction"
+		},
+		{
+			"id": 2,
+			"nama": "Defence & Social Security"
+		},
+		{
+			"id": 3,
+			"nama": "Arts & Entertainment"
+		},
+		{
+			"id": 4,
+			"nama": "Electricity & Gas"
+		},
+		{
+			"id": 5,
+			"nama": "Health"
+		},
+		{
+			"id": 6,
+			"nama": "Accomodation & Food"
+		},
+		{
+			"id": 7,
+			"nama": "Agriculture"
+		}
+	]
+}

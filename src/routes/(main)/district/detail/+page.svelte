@@ -1,0 +1,89 @@
+<script>
+	// @ts-nocheck
+
+	import Image from '$lib/components/image.svelte';
+	import placeholder from '$lib/assets/placeholder_place.webp';
+	import Pagination from '$lib/js/pagination';
+	import { onMount } from 'svelte';
+	import { exec } from '$lib/js/fetch';
+	import Investment from '$lib/sections/investment.svelte';
+	import Map from '$lib/components/map.svelte';
+
+	let data = {};
+	let display, pagination;
+	onMount(async () => {
+		data = await exec(`/getDetailDistrict.json`);
+		pagination = new Pagination(data.usaha);
+		display = pagination.chop();
+	});
+</script>
+
+<div class="py-6 px-16">
+	<Image {data} {placeholder} aspectRatio="aspect-hero" />
+	<br />
+
+	<h1 class="text-2xl font-bold my-6">{data.nama}</h1>
+
+	<div class="flex items-center gap-10 justify-between">
+		<div class="flex flex-col gap-2 basis-7/12">
+			<div class="font-semibold">Karakteristik</div>
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil nobis est tempora molestiae
+				veritatis ipsam magni in voluptas! Exercitationem nam aliquid ipsa adipisci, enim
+				consectetur sunt placeat perferendis tempora voluptatem.
+			</p>
+			<div class="font-semibold">Sektor</div>
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil nobis est tempora molestiae
+				veritatis ipsam magni in voluptas! Exercitationem nam aliquid ipsa adipisci, enim
+				consectetur sunt placeat perferendis tempora voluptatem.
+			</p>
+		</div>
+		<div class="w-56 aspect-square bg-blue-3 relative me-4">
+			<div class="relative aspect-square -translate-y-4 translate-x-4">
+				<Image {data} {placeholder} aspectRatio="aspect-square" />
+			</div>
+		</div>
+	</div>
+	<br />
+
+	<h2 class="font-semibold my-6">Daftar Usaha dan UMKM</h2>
+	<table>
+		<thead>
+			<tr>
+				<th>No</th>
+				<th>Company Name</th>
+				<th>Sector</th>
+				<th>Sub Sector</th>
+				<th>District</th>
+			</tr>
+		</thead>
+		<tbody>
+			{#if data.usaha && data.usaha.length > 0}
+				{#each display as x}
+					<tr>
+						<td>{x.pageNum}</td>
+						<td>{x.nama}</td>
+						<td>{x.sektor}</td>
+						<td>{x.subSektor}</td>
+						<td>{data.nama}</td>
+					</tr>
+				{/each}
+			{:else}
+				<tr>
+					<td>Daerah ini belum memiliki Usaha dan UMKM</td>
+				</tr>
+			{/if}
+		</tbody>
+	</table>
+	<br />
+
+	<h2 class="font-semibold my-6">List Peluang Investasi</h2>
+	<Investment searchbar="false" interval="4" />
+	<button class="ml-auto my-3 px-4 py-2">Lihat Selengkapnya</button>
+	<br />
+
+	<h2 class="font-semibold my-6">PETA</h2>
+	<Map />
+	<br />
+</div>
