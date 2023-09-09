@@ -11,6 +11,7 @@
 		<a href="/investment">PELUANG</a>
 		<a href="/district">DAERAH</a>
 		<a href="/sector">SEKTOR</a>
+		<a href="/user/homepage" class="text-amber-600">UMKM</a>
 		<a href="/investment">
 			<button class="text-sm p-2 font-normal">Peluang Investasi</button>
 		</a>

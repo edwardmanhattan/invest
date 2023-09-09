@@ -7,7 +7,7 @@
 </script>
 
 <div class="grow overflow-auto p-12">
-	<h1>Homepage</h1>
+	<h1>District</h1>
 	<br />
 
 	<h2>Gambar</h2>
@@ -22,7 +22,7 @@
 	<h2>Link Tabel</h2>
 	<input type="text" />
 
-	<div class="grid grid-cols-2">
+	<div class="grid grid-cols-2 items-center gap-4">
 		<div>
 			<h2>Latitude</h2>
 			<input type="text" />
