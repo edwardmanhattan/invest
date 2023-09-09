@@ -6,7 +6,7 @@
 	import Filter from '$lib/components/investment-filter.svelte';
 	import Pagination from '$lib/js/pagination';
 	import { onMount } from 'svelte';
-	import { exec } from '$lib/js/fetch';
+	import { fiero } from '$lib/js/fetch';
 
 	export let searchbar = true;
 	export let filter = false;
@@ -14,7 +14,7 @@
 
 	let data, display, pagination;
 	onMount(async () => {
-		data = await exec(`/getInvestment.json`);
+		data = await fiero(`/getInvestment.json`);
 		pagination = new Pagination(data, interval);
 		display = pagination.chop();
 	});

@@ -3,14 +3,14 @@
 
 	import Thumbnail from '$lib/components/district.svelte';
 	import Pagination from '$lib/js/pagination';
-	import { exec } from '$lib/js/fetch';
+	import { fiero } from '$lib/js/fetch';
 	import { onMount } from 'svelte';
 
 	export let interval = 8;
 
 	let data, display, pagination;
 	onMount(async () => {
-		data = await exec(`/getDistrict.json`);
+		data = await fiero(`/getDistrict.json`);
 		pagination = new Pagination(data, interval);
 		display = pagination.chop();
 	});

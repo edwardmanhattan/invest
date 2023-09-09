@@ -3,14 +3,14 @@
 
 	import Thumbnail from '$lib/components/sector.svelte';
 	import Pagination from '$lib/js/pagination';
-	import { exec } from '$lib/js/fetch';
+	import { fiero } from '$lib/js/fetch';
 	import { onMount } from 'svelte';
 
 	export let interval = 8;
 
 	let data, display, pagination;
 	onMount(async () => {
-		data = await exec(`/getSector.json`);
+		data = await fiero(`/getSector.json`);
 		pagination = new Pagination(data, interval);
 		display = pagination.chop();
 	});

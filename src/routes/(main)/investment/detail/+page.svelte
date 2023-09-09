@@ -4,7 +4,7 @@
 	import placeholder from '$lib/assets/placeholder_place.webp';
 	import Image from '$lib/components/image.svelte';
 	import Icon from '@iconify/svelte';
-	import { exec } from '$lib/js/fetch';
+	import { fiero } from '$lib/js/fetch';
 	import { rupiah } from '$lib/js/format';
 	import { onMount } from 'svelte';
 	import Map from '$lib/components/map.svelte';
@@ -13,7 +13,7 @@
 		nilai: 0
 	};
 	onMount(async () => {
-		data = await exec(`/getDetailInvestment.json`);
+		data = await fiero(`/getDetailInvestment.json`);
 	});
 </script>
 

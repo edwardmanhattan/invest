@@ -1,5 +1,4 @@
 // @ts-nocheck
-import noImage from '$lib/assets/no-image.webp';
 
 export const config = {
 	self: 'http://localhost:5173',
@@ -7,14 +6,14 @@ export const config = {
 	photo: 'http://sw.crossnet.co.id:2682/getPhoto'
 };
 
-export const headers = {
+export const defaultHeaders = {
 	Accept: 'application/json',
 	'Content-Type': 'application/x-www-form-urlencoded',
 	Token: 'rahasia',
 	ID_User: 0
 };
 
-export async function exec(url, data = null, method = 'GET') {
+export async function fiero(url, data = null, method = 'GET', headers = defaultHeaders) {
 	const abort = new AbortController();
 	const abortFn = () => {
 		abort.abort();
@@ -38,9 +37,7 @@ export async function exec(url, data = null, method = 'GET') {
 
 	if (method === 'POST') {
 		const formData = new URLSearchParams();
-		for (const [key, value] of Object.entries(data)) {
-			formData.append(key, value.toString());
-		}
+		for (const [key, value] of Object.entries(data)) formData.append(key, value.toString());
 		requestInit.body = formData.toString();
 	}
 
@@ -71,7 +68,8 @@ export async function exec(url, data = null, method = 'GET') {
 	}
 }
 
-export const fetchImage = async (id, folder, placeholder = noImage) => {
+import noImage from '$lib/assets/no-image.webp';
+export const fieroImage = async (id, folder, placeholder = noImage) => {
 	return await fetch(config.photo + `?id=${id}&folder=${folder}`)
 		.then((res) => {
 			if (res.status === 404) throw Error('not found');

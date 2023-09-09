@@ -5,14 +5,14 @@
 	import placeholder from '$lib/assets/placeholder_place.webp';
 	import Pagination from '$lib/js/pagination';
 	import { onMount } from 'svelte';
-	import { exec } from '$lib/js/fetch';
+	import { fiero } from '$lib/js/fetch';
 	import Investment from '$lib/sections/investment.svelte';
 	import Map from '$lib/components/map.svelte';
 
 	let data = {};
 	let display, pagination;
 	onMount(async () => {
-		data = await exec(`/getDetailDistrict.json`);
+		data = await fiero(`/getDetailDistrict.json`);
 		pagination = new Pagination(data.usaha);
 		display = pagination.chop();
 	});

@@ -6,11 +6,11 @@
 	import Investment from '$lib/sections/investment.svelte';
 
 	import { onMount } from 'svelte';
-	import { exec } from '$lib/js/fetch';
+	import { fiero } from '$lib/js/fetch';
 
 	let data = {};
 	onMount(async () => {
-		data = await exec(`/getDetailSector.json`);
+		data = await fiero(`/getDetailSector.json`);
 	});
 </script>
 
