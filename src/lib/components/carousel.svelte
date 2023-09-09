@@ -15,7 +15,7 @@
 	{/await}
 
 	<div
-		class="layer-2 absolute bottom-0 h-[50%] bg-slate-300/5 bg-gradient-to-t text-white px-16 py-8"
+		class="layer-2 absolute bottom-0 h-[50%] bg-gradient-to-t from-slate-900 to-transparent text-white px-16 py-8"
 	>
 		<div class="ml-auto w-6/12 flex flex-col justify-center h-full">
 			<p class="text-3xl font-bold mb-4">KOTA PROBOLINGGO</p>
