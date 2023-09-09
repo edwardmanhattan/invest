@@ -3,7 +3,7 @@
 
 	import Thumbnail from '$lib/components/district.svelte';
 	import Pagination from '$lib/js/pagination';
-	import { fiero } from '$lib/js/fetch';
+	import { fiero } from '$lib/js/fiero';
 	import { onMount } from 'svelte';
 
 	export let interval = 8;

@@ -12,9 +12,11 @@
 
 	<div class="absolute inset-0 flex flex-col gap-2 items-center justify-center bg-slate-600/80">
 		<div class="text-white">{data.nama}</div>
-		<button class="px-4 bg-blue-2">
-			{data.jumlahProjek}
-			{data.jumlahProjek === 1 ? 'Project' : 'Projects'}
-		</button>
+		<a href="/district/detail">
+			<button class="px-4 bg-blue-2">
+				{data.jumlahProjek}
+				{data.jumlahProjek === 1 ? 'Project' : 'Projects'}
+			</button>
+		</a>
 	</div>
 </div>

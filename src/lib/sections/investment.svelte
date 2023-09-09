@@ -6,7 +6,7 @@
 	import Filter from '$lib/components/investment-filter.svelte';
 	import Pagination from '$lib/js/pagination';
 	import { onMount } from 'svelte';
-	import { fiero } from '$lib/js/fetch';
+	import { fiero } from '$lib/js/fiero';
 
 	export let searchbar = true;
 	export let filter = false;

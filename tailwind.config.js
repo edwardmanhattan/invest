@@ -9,7 +9,8 @@ export default {
 				'blue-3': '#062137'
 			},
 			aspectRatio: {
-				hero: '3 / 1'
+				hero: '3 / 1',
+				carousel: '2 / 1'
 			}
 		}
 	},

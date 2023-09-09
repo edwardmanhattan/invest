@@ -2,10 +2,10 @@
 	// @ts-nocheck
 
 	import Image from '$lib/components/image.svelte';
-	import placeholder from '$lib/assets/placeholder_place.webp';
+	import placeholder from '$lib/assets/hero.webp';
 	import Pagination from '$lib/js/pagination';
 	import { onMount } from 'svelte';
-	import { fiero } from '$lib/js/fetch';
+	import { fiero } from '$lib/js/fiero';
 	import Investment from '$lib/sections/investment.svelte';
 	import Map from '$lib/components/map.svelte';
 

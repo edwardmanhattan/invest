@@ -2,11 +2,11 @@
 	// @ts-nocheck
 
 	import Image from '$lib/components/image.svelte';
-	import placeholder from '$lib/assets/placeholder_place.webp';
+	import placeholder from '$lib/assets/hero.webp';
 	import Investment from '$lib/sections/investment.svelte';
 
 	import { onMount } from 'svelte';
-	import { fiero } from '$lib/js/fetch';
+	import { fiero } from '$lib/js/fiero';
 
 	let data = {};
 	onMount(async () => {

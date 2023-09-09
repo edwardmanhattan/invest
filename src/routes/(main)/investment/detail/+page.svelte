@@ -1,10 +1,10 @@
 <script>
 	// @ts-nocheck
 
-	import placeholder from '$lib/assets/placeholder_place.webp';
+	import placeholder from '$lib/assets/hero.webp';
 	import Image from '$lib/components/image.svelte';
 	import Icon from '@iconify/svelte';
-	import { fiero } from '$lib/js/fetch';
+	import { fiero } from '$lib/js/fiero';
 	import { rupiah } from '$lib/js/format';
 	import { onMount } from 'svelte';
 	import Map from '$lib/components/map.svelte';

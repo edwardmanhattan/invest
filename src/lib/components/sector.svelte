@@ -10,8 +10,10 @@
 	<Image {data} {placeholder} aspectRatio="aspect-square" />
 
 	<div class="absolute inset-0 flex flex-col gap-2 items-center justify-center">
-		<button class="w-11/12 p-3">
-			{data.nama}
-		</button>
+		<a href="/sector/detail" class="w-11/12">
+			<button class="p-3 mx-auto">
+				{data.nama}
+			</button>
+		</a>
 	</div>
 </div>

@@ -6,11 +6,8 @@
 	import Sector from '$lib/sections/sector.svelte';
 </script>
 
+<Carousel />
 <div class="py-6 px-16">
-	<div class="border border-black/70 rounded p-6 my-2">
-		<Carousel />
-	</div>
-
 	<div class="flex justify-between items-center gap-48 p-6 my-6">
 		<div>
 			<div class="text-2xl font-bold">Tentang Probolinggo</div>

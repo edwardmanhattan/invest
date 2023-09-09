@@ -8,7 +8,7 @@
 	export let data = {};
 </script>
 
-<div class="rounded shadow-md">
+<a href="/investment/detail" class="block rounded shadow-md">
 	<div class="bg-blue-700 aspect-video w-full">
 		<Image {data} {placeholder} aspectRatio="aspect-video" />
 	</div>
@@ -23,4 +23,4 @@
 			<span>{data.lokasi}</span>
 		</div>
 	</div>
-</div>
+</a>

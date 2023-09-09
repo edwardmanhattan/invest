@@ -1,6 +1,6 @@
 <script>
 	// @ts-nocheck
-	import { fieroImage } from '$lib/js/fetch';
+	import { fieroImage } from '$lib/js/fiero';
 	export let data;
 	export let aspectRatio = 'aspect-square';
 	export let placeholder = undefined;
