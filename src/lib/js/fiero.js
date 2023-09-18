@@ -1,8 +1,8 @@
 // @ts-nocheck
 
 export const config = {
-	self: 'http://sw.crossnet.co.id:2309',
-	api: 'http://sw.crossnet.co.id:2309',
+	self: 'http://localhost:5173',
+	api: 'http://localhost:5173',
 	photo: 'http://sw.crossnet.co.id:2682/getPhoto'
 };
 

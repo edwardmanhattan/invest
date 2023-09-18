@@ -1,9 +1,9 @@
 <script>
 	// @ts-nocheck
 
-	import Thumbnail from '$lib/components/investment.svelte';
-	import Searchbar from '$lib/components/investment-searchbar.svelte';
-	import Filter from '$lib/components/investment-filter.svelte';
+	import Thumbnail from '$lib/components/investment/investment.svelte';
+	import Searchbar from '$lib/components/investment/searchbar.svelte';
+	import Filter from '$lib/components/investment/filter.svelte';
 	import Pagination from '$lib/js/pagination';
 	import { onMount } from 'svelte';
 	import { fiero } from '$lib/js/fiero';
